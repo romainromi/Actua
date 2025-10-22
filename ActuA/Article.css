@@ -1,0 +1,190 @@
+:root {
+    --maxw: 1000px;
+    /*Taille maximal*/
+    --gap: 24px;
+    /*espacement*/
+    /*--font1:;
+    --font2:;
+    --font3:;*/
+     --BLEU1: #001D3D;
+    --JAUNE1: #FFC300;
+    --BLEU2: #003566;
+}
+
+   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family:;*/
+    color: var(--text);
+}
+
+.container {
+    /* espacement avec les coté*/
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+
+/*HEADER*/
+
+
+header {
+    background-color: var(--BLEU1);
+    color: #fff;
+    padding: 32px;
+    margin: 16px;
+    border-radius: 10px;
+
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.burger{
+    font-size: 2rem;
+}
+
+header .headMenu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#navigation{
+    display: noe;
+    text-decoration: none;
+    color: white;
+    align-items: flex-end;
+}
+
+#navigation:hover{
+    color: var(--JAUNE1);
+    scale: 1.06;
+}
+
+.fa-bars, .fa-user {
+    font-size: x-large;
+    color: white;
+    background-color: var(--BLEU1);
+    border: none;
+    transition: transform 0.3s ease;
+    transition: color 0.3 ease;
+    cursor: pointer;
+}
+
+.fa-bars, .fa-user:hover{
+    transform: scale(1.10);
+    color: var(--JAUNE1);
+}
+
+/*ENTETE ARTICLE*/
+.box {
+    background-color: #FFC300;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.box img {
+    padding: 1.0rem;
+}
+
+.contenant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.contenant h2 {
+    text-decoration: underline;
+    font-size: 4rem;
+
+}
+
+.box cite{
+    position:static;
+
+    font-size: 1.0rem;
+    padding: 0.5rem;
+
+}
+
+/*REDACTION ARTICLE*/
+
+.text_article p {
+    text-align: left;
+    font-size: 28px;
+    line-height: 1.9rem;
+    text-align: justify;
+
+}
+
+/*FOOTER*/
+
+
+footer {
+    background-color: var(--BLEU1);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 6rem;
+    width: 100%;
+}
+
+.footer-info p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    width: 50%;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+}
+
+.footer-info a:hover {
+    color: #FFC300;
+}
+
+.adresse {
+    width: 30%;
+}
+
+footer p {
+    display: flex;
+    flex-direction: column;
+}
