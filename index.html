@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page contact</title>
+</head>
+<body>
+    <header class="header header-container">
+        <div class="headMenu">
+
+            <span class="burger">☰</span>
+            <h1 class="titre">ActuA</h1>
+            <button class="fa-solid fa-user" href="#connexion"></button>
+        </div>
+        <nav class="nav">
+            <a href="#accueil" class="menu1" id="navigation">Accueil</a>
+            <a href="#blog" class="menu2" id="navigation">Blog</a>
+            <a href="#contact" class="menu3" id="navigation">Contact</a>
+        </nav>
+    </header>
+    <main class="main">
+    <h1>Formulaire de contact</h1>
+
+    <p>Besoin d'informations, laissez nous un message nous serons ravis de vous aider</p>
+
+    <form action="">
+        <fieldset>
+        <label for="Nom"></label>
+        <input type="text" name="Nom" id="Nom" placeholder="Nom">
+
+        <label for="Prénom"></label>
+        <input type="text" name="Prénom" id="Prénom" placeholder="Prénom"required>
+
+        <label for="Email"></label>
+        <input type="text" name="Email" id="Email" placeholder="Email" required>
+
+        <label for="Téléphone"></label>
+        <input type="tel" name="Téléphone" id="Téléphone" placeholder="Téléphone">
+
+        <label for="Veuillez sélectionner votre sujet" ></label>
+        <select name="Objet" id="Objet">Objet 
+            <option value="Demande d'information">Demande d'informations</option>
+            <option value="Proposer un sujet / témoignage">Proposer un sujet / témoignage</option>
+            <option value="Autre sujet">Autre sujet</option>
+         required</select>
+
+         <label for="Message"></label>
+         <textarea name="Message" id="Message" rows="10" placeholder="Message"></textarea>
+
+        <button type= "submit" id="button">Envoyer</button>
+    </fieldset>
+    </form>
+
+
+    </main>
+  <footer>
+        <div class="footer-container">
+            <h2 class="footer-logo">ActuA</h2>
+            <section class="footer-info">
+                <p class="adresse">Zone Industrielle des Pontôts, 8 Imp. d'Atchinetche, 64100 Bayonne</p>
+                <p>05 59 59 08 44</p>
+                <p>Suivez-nous sur les réseaux sociaux</p>
+                <p><a href="#" class="contact">Contacter</a></p>
+            </section>
+        </div>
+    </footer>
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/5bb33167a7.js" crossorigin="anonymous"></script>
+</body>
+</html>
