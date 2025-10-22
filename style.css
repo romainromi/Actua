@@ -1,0 +1,171 @@
+:root {
+    --BLEU1: #001D3D;
+    --JAUNE1: #FFC300;
+    --BLEU2: #003566;
+}
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+body {
+
+}
+
+header {
+    background-color: var(--BLEU1);
+    color: #fff;
+    padding: 32px;
+    margin: 16px;
+    border-radius: 10px;
+
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.burger{
+    font-size: 2rem;
+}
+
+header .headMenu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#navigation{
+    display: noe;
+    text-decoration: none;
+    color: white;
+    align-items: flex-end;
+}
+
+#navigation:hover{
+    color: var(--JAUNE1);
+    scale: 1.06;
+}
+
+.fa-bars, .fa-user {
+    font-size: x-large;
+    color: white;
+    background-color: var(--BLEU1);
+    border: none;
+    transition: transform 0.3s ease;
+    transition: color 0.3 ease;
+    cursor: pointer;
+}
+
+.fa-bars, .fa-user:hover{
+    transform: scale(1.10);
+    color: var(--JAUNE1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    gap: 1rem;
+
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    text-align: left;
+    margin-top: 1rem;
+
+}
+
+.test {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    max-width: 40vw;
+
+}
+
+input {
+    background-color: rgb(195, 200, 206);
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(255, 217, 46);
+    width: 279;
+    height: 60;
+    opacity: 1;
+    top: 1444px;
+    left: 88px;
+    border-radius: 10px;
+    border-width: 1px;
+
+}
+
+.checkbox{
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    background-color: var(--BLEU1);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 6rem;
+    background-color: aqumarine;
+    width: 100%;
+}
+
+.footer-info p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    width: 50%;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+}
+
+.footer-info a:hover {
+    color: #FFC300;
+}
+
+.adresse {
+    width: 30%;
+}
+
+footer p {
+    display: flex;
+    flex-direction: column;
+}
